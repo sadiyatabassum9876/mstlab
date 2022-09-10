@@ -1,0 +1,45 @@
+<html>
+<head>
+</head>
+<script>
+days=["sunday","monday","tuesday","wednesday","thursday","friday","saturday"];
+months=["January","February","March","April","May","June","July","August","September","October","November","December"];
+//creation of Date object
+var d=new Date();
+document.write("<font color='green'>");
+document.write("Date is "+d+"<br>");
+document.write("</font>");
+//displaying the present day as number
+var day=d.getDay();//returns values from 0 to 6 based on the day
+document.write("<font color='red'>");
+document.write("Day is "+day+"<br>");
+//displaying the present day as name and number
+document.write("Day is "+day+" "+days[day]+"<br>");
+//getMonth(),getYear(),getHours(),getTime()...
+//displaying year 
+var year=d.getFullYear();//returns year
+document.write("Year is "+year+"<br>");
+//displaying month
+var mon=d.getMonth();//returns number from 0-11 
+document.write("Month is "+mon+"<br>");
+//to return the month name
+document.write("Month Name is "+mon+" "+months[mon]+"<br>");
+//displaying hours
+var hr=d.getHours();
+document.write("Hours: "+hr+"<br>");
+//displaying minutes
+var min=d.getMinutes();
+document.write("Minutes: "+min+"<br>");
+//displaying seconds
+var sec=d.getSeconds();
+document.write("Seconds: "+sec+"<br>");
+//displaying Time
+var t=d.getTime();//returns in the form of milliseconds
+document.write("Time is "+t+"<br>");
+
+
+
+
+</script>
+
+</html>
